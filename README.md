@@ -5,10 +5,15 @@ This repository contains an AWS Glue ETL job script that integrates data from mu
 ## Table of Contents
 
 Description
+
 Prerequisites
+
 Installation
+
 Usage
+
 Folder Structure
+
 License
 
 **Description**
@@ -18,9 +23,13 @@ The AWS Glue ETL job script automates the extraction, transformation, and loadin
 **Key Features:**
 
 Reads data from Amazon S3 using AWS Glue DynamicFrames and Spark DataFrames.
+
 Parses and flattens JSON columns from production logs.
+
 Performs data quality checks to ensure data integrity and validity.
+
 Calculates defective percentages and aggregates production statistics.
+
 Writes reports to Amazon Redshift based on predefined business logic.
 
 **Prerequisites**
@@ -28,8 +37,11 @@ Writes reports to Amazon Redshift based on predefined business logic.
 Before running this ETL job, ensure the following prerequisites are met:
 
 AWS Glue environment is set up with necessary IAM roles and permissions.
+
 Amazon Redshift cluster is accessible and configured with appropriate credentials.
+
 Data sources (sales_table, complaints_table, production_table) are defined in the AWS Glue Data Catalog.
+
 Python dependencies (pyspark, awsglue) are installed in your AWS Glue environment.
 
 **Installation**
