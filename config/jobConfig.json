@@ -1,0 +1,20 @@
+{
+    "job_name": "ln-redshiftmain",
+    "input_bucket": "ln-redshiftbucket/input",
+    "output_bucket": "ln-redshiftbucket",
+    "redshift": {
+        "url": "jdbc:redshift://ln-redshiftproject.cvujsv8ibxmj.ap-south-1.redshift.amazonaws.com:5439/dev",
+        "user": "awsuser",
+        "password": "Lavanya_01",
+        "schema": "myschema",
+        "database": "dev"
+    },
+    "tables": {
+        "sales_table": "sales_tsv",
+        "complaints_table": "complaints_tsv",
+        "production_table": "ln-redshiftbucket/input",
+        "report1_table": "report1",
+        "report2_table": "report2",
+        "report3_table": "report3"
+    }
+}
